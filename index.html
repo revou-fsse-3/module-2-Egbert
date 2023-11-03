@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamesplay</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav>
+        <span class="logo"> 
+            <img src="https://yt3.googleusercontent.com/T6JmXgT7Z8Tmy5UkdZbZChVSmhksRxpR_utuk1C6donntGnVRR60cu7BYTs29_CFZ-BVq2fzWw=s900-c-k-c0x00ffffff-no-rj" alt="controller ps">
+            <b>Gamesplay</b>
+        </span>
+        <ul class="menu" id="myMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="">Sign Up</a></li>
+        </ul>
+
+        <button class="hamburger" style="padding: 0px; border: none; cursor: pointer;">
+            <img style="background-color: red; width: 20px" src="./images/Hamburger_icon.svg.png" alt="">
+        </button>
+
+        <div id="navbarMobile" class="navbarMobile">
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#contact">Contact</a>
+            <a href="">Sign Up</a>
+        </div>
+    </nav>
+
+    <section id="home">
+        <header class="header" id="header">
+            <img src="https://th.bing.com/th/id/OIP.rFvnJpbaiit9V87OrybPTAHaDz?pid=ImgDet&rs=1" alt="DOTA 2 VS LOL">
+            <div class="kolom">
+                <h1>Welcome !</h1>
+                <p>To the gaming portal website created to unite players from all over the world. You can meet people who have the same abilities as you and can form a team with these people. Don't forget to log in first.</p>
+                <a href="" class="play">Play</a>
+            </div>
+        </header>
+    </section>
+    <section id="games">
+        <div class="kolom">
+            <h2>Games</h2>
+            <div class="container">
+                <div class="containerSatu">
+                    <div id="dota">
+                        <h2>Dota 2</h2>
+                        <img src="https://th.bing.com/th/id/R.f5e2c95c57eece42f40e4810987608aa?rik=bqvQcu7zMwMuAA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fQE7cCp1.jpg&ehk=BcUR0zFN1jhcxF2WStrLt1ZDcY%2fe85YUYXy1Gpj4%2fVk%3d&risl=&pid=ImgRaw&r=0" alt="dota2">
+                    </div>
+                    <div id="lol">
+                        <h2>leage of legends</h2>
+                        <img src="https://cdn1.dotesports.com/wp-content/uploads/2019/09/12195522/league-of-legends.jpg" alt="league-of-legends">
+                    </div>
+                    <div id="csgo">
+                        <h2>Conter Strike Global Offensive</h2>
+                        <img src="https://counterstrikeando.com/wp-content/uploads/2020/04/counter-strike-go.jpg" alt="counter-strike-go">
+                    </div>
+                </div>
+
+                <div class="containerDua">
+                    <div id="valorant">
+                        <h2>valorant</h2>
+                        <img src="https://1.bp.blogspot.com/-WcBKC_CHHr0/XyYyrXFflvI/AAAAAAAA1Bg/fl7V57XXzugMZVTidd-ix0XbVg9NYecswCLcBGAsYHQ/s2560/valorant-2020-5k-game-e9-3840x2160.jpg" alt="valorant">
+                    </div>
+                    <div id="pubg">
+                        <h2>Player Unknown Battleground</h2>
+                        <img src="https://th.bing.com/th/id/R.b9b252202cae789c3f236ac79726b630?rik=Z%2bo8l%2fVwKdFSRQ&riu=http%3a%2f%2fwww.planetagaming.com%2fwp-content%2fuploads%2f2018%2f03%2fpubg-player-unknown-battlegrounds-planeta-gaming.jpg&ehk=ZVJnrwDaGbTSrrJ4%2bwkuPuM8g7IXvOWyIIw3H8kz9qk%3d&risl=&pid=ImgRaw&r=0" alt="pubg-player-unknown-battlegrounds">
+                    </div>
+                    <div id="fortnite">
+                        <h2>Fortnite</h2>
+                        <img src="https://th.bing.com/th/id/OIP.5EPc0PSvGa_PKFqKFhteugHaEK?w=286&h=180&c=7&r=0&o=5&pid=1.7" alt="fortnite">
+                    </div>
+                </div>
+            </div>
+            <h3>Proplayer Team Secret 2019</h3>
+            <picture>
+                <source media="(max-width: 956px)" srcset="images/Team-Secret-dota-2-small-version.jpg">
+                <img src="images/Team-Secret-dota-2.jpg" alt="Pro Player team Secret 2019 DOTA 2">
+            </picture>
+        </div>
+    </section>
+
+    
+
+    <section id="form-section">
+        <div>
+            <h2>Join to our comunity</h2>
+        </div>
+        <form action="#">
+            <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input id="fullName" type="text" required />
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="email" required />
+            </div>
+
+            <div>
+                <label for="dob">Date Of Birth:</label>
+                <input type="date" id="dob" name="tripStart" value="2000-12-03" />
+            </div>
+
+            <div>
+                <p>Are you living in Indonesia?</p>
+                <input type="radio" id="yes" name="isIndonesia" value="yes" />
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="isIndonesia" value="no" />
+                <label for="no">No</label>
+            </div>
+            </fieldset>
+            
+            <fieldset>
+            <legend>Additional information:</legend>
+            <div>
+                <p>What do you think about our comunity?</p>
+                <input
+                id="cool"
+                type="checkbox"
+                name="personality"
+                value="cool"
+                />
+                <label for="cool">Cool</label>
+                <input
+                id="awesome"
+                type="checkbox"
+                name="personality"
+                value="awesome"
+                />
+                <label for="awesome">Awesome</label>
+                <input
+                id="good"
+                type="checkbox"
+                name="personality"
+                value="good"
+                />
+                <label for="good">Good</label>
+            </div>
+            <div>
+                <p>Tell us why you love playing games!</p>
+                <textarea rows="3"></textarea>
+            </div>
+            <div>
+                <p>Upload your favorite moment picture here:</p>
+                <input
+                type="file"
+                id="photo"
+                name="myMoment"
+                required
+                accept="image/png, image/jpeg"
+                />
+            </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <div id="contact">
+            <div class="footer">
+                <div class="footer-section">
+                    <h2>Gamesplay</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo suscipit odio vitae delectus culpa dicta.</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Social</h2>
+                    <p><b>Youtube: </b>Gamesplay</p>
+                    <p><b>Instagram: </b>@gamesplay</p>
+                </div>
+                <div class="footer-section">
+                    <h2>Contact</h2>
+                    <p><b>Email: </b>games.play@gmail.com </p>
+                </div>
+                <div class="footer-section">
+                    <h2>Games</h2>
+                    <ul class="list">
+                        <li>DOTA 2</li>
+                        <li>LOL</li>
+                        <li>CSGO</li>
+                        <li>valorant</li>
+                        <li>PUBG</li>
+                        <li>Fortnite</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+    <script src="./JS/main.js"></script>
+</body>
+</html>
