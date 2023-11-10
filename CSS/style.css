@@ -16,8 +16,89 @@
 body {
     margin: 0px;
     font-family: "Montserrat", 'Times New Roman', Times, serif;
-    background-color: black;
+}
+
+.dark-mode {
+    background-color: #333333;
     color: white;
+}
+
+.dark-mode nav a {
+    color: white;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider::before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: rotateX(14px);
+    transform: 14px;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+nav a {
+    color: #222222;
+    text-decoration: none;
+}
+
+nav #dark-mode-switch {
+    display: flex;
+    /* margin-left: auto;
+    margin-right: 16px; */
+}
+
+nav #dark-mode-switch p {
+    margin-right: 16px;
 }
 
 nav {
@@ -27,7 +108,6 @@ nav {
     justify-content: space-between;
     position: fixed;
     height: 52px;
-    background-color: black;
     border-bottom: 2px solid black;
 }
 
@@ -49,7 +129,7 @@ nav ul {
 
 nav ul li {
     float: left;
-    color: black;
+    color: white;
     list-style: none;
     font-weight: bold;
     text-align: center;
@@ -75,7 +155,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 32px;
+    margin-top: 60px;
     text-shadow: 1px 1px 2px black;
 }
 
@@ -141,7 +221,6 @@ a.play {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
-    border: 1px solid black;
     margin: auto;
 }
 
@@ -158,26 +237,32 @@ a.play {
     filter: grayscale(0%);
 }
 
-/* #games .kolom {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(4, 1fr);
-}
-
-#games .kolom #dota{
-    grid-column: 1;
-    grid-row: 1/ span 2;
-} */
-
 .kolom picture img{
     width: 500px;
     height: auto;
 }
 
-.materi {
-    padding: 20px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+.kolom .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
+    grid-auto-rows: 320px 320px;    
+}
+
+.kolom .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-container #item-1 {
+    grid-column: 1;
+    grid-row: 1/2 span;
+}
+
+.grid-container #item-2 {
+    grid-row: 1;
+    grid-column: 2/3 span;
 }
 
 img {
@@ -260,7 +345,17 @@ button[type="submit"] {
 }
 
 .showNavbarMobile {
-    display: flex; position: absolute; flex-direction: column; gap: 10px; background-color: gray; color: black;padding: 10px 5px 10px 5px; width: 50%; top: 55px; text-align: center; left: 50%; transform: translateX(-50%);
+    display: flex; 
+    position: absolute; 
+    flex-direction: column; gap: 10px; 
+    background-color: gray; 
+    color: black;
+    padding: 10px 5px 10px 5px; 
+    width: 50%; 
+    top: 55px; 
+    text-align: center; 
+    left: 50%; 
+    transform: translateX(-50%);
 }
 
 .navbarMobile {
@@ -295,4 +390,28 @@ nav ul {
     width: 100%;
     height: auto;
 }
+
+.kolom .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    grid-auto-rows: 240px 240px 240px 240px;    
+}
+
+.kolom .grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-container #item-1 {
+    grid-column: 1/2 span;
+    grid-row: 1;
+}
+
+.grid-container #item-2 {
+    grid-row: 2;
+    grid-column: 1;
+}
+
 }

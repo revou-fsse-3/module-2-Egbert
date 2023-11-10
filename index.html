@@ -18,6 +18,13 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="">Sign Up</a></li>
         </ul>
+        <span id="dark-mode-switch">
+            <p>Dark Mode</p>
+            <label class="switch">
+            <input type="checkbox" onchange="toggleDarkMode()" id="checkbox-dark-mode">
+            <span class="slider round"></span>
+            </label>
+        </span>
 
         <button class="hamburger" style="padding: 0px; border: none; cursor: pointer;">
             <img style="background-color: red; width: 20px" src="./images/Hamburger_icon.svg.png" alt="">
@@ -45,7 +52,7 @@
         <div class="kolom">
             <h2>Games</h2>
             <div class="container">
-                <div class="containerSatu">
+                <div>
                     <div id="dota">
                         <h2>Dota 2</h2>
                         <img src="https://th.bing.com/th/id/R.f5e2c95c57eece42f40e4810987608aa?rik=bqvQcu7zMwMuAA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fQE7cCp1.jpg&ehk=BcUR0zFN1jhcxF2WStrLt1ZDcY%2fe85YUYXy1Gpj4%2fVk%3d&risl=&pid=ImgRaw&r=0" alt="dota2">
@@ -60,7 +67,7 @@
                     </div>
                 </div>
 
-                <div class="containerDua">
+                <div>
                     <div id="valorant">
                         <h2>valorant</h2>
                         <img src="https://1.bp.blogspot.com/-WcBKC_CHHr0/XyYyrXFflvI/AAAAAAAA1Bg/fl7V57XXzugMZVTidd-ix0XbVg9NYecswCLcBGAsYHQ/s2560/valorant-2020-5k-game-e9-3840x2160.jpg" alt="valorant">
@@ -75,15 +82,27 @@
                     </div>
                 </div>
             </div>
-            <h3>Proplayer Team Secret 2019</h3>
-            <picture>
-                <source media="(max-width: 956px)" srcset="images/Team-Secret-dota-2-small-version.jpg">
-                <img src="images/Team-Secret-dota-2.jpg" alt="Pro Player team Secret 2019 DOTA 2">
-            </picture>
+            
+            <h3>World Champions Team 2021</h3>
+            <div class="grid-container">
+                <div class="world-champions" id="item-1">
+                    <img src="https://www.bolafansclub.com/wp-content/uploads/2021/12/acend-menjadi-juara-valorant-champions-2021.jpg" alt="World Champions 2021 Valorant">
+                </div>
+                <div class="world-chamions" id="item-2">
+                    <img src="https://dailyspin.id/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2021/10/Team-Spirit.jpg.webp" alt="The International 10 Champions DOTA 2">
+                </div>
+                <div class="world-champions" id="item-3">
+                    <img src="https://pbs.twimg.com/media/FDhlfaIWUAE2d8N.jpg:large" alt="World Champions 2021 league-of-legends">
+                </div>
+                <div class="world-chamiopns" id="item-4">
+                    <img src="https://th.bing.com/th/id/OIP.rPyBs3hWzwvuUo8qNFzYtQHaEK?w=316&h=180&c=7&r=0&o=5&pid=1.7" alt="conter Strike Global Global Major Winners 2021">
+                </div>
+                <div class="world-champions" id="item-5">
+                    <img src="https://d1lss44hh2trtw.cloudfront.net/assets/article/2019/11/25/inaugural-pubg-global-championship-ends-with-geng-win_feature.jpg" alt="Player Unknown Battleground Global Championship winner 2021">
+                </div>
+            </div>
         </div>
     </section>
-
-    
 
     <section id="form-section">
         <div>
