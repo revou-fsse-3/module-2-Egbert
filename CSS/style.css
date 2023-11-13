@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: "Montserrat";
-    src: url(fonts/Montserrat-Regular.ttf);
+    src: url(../fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url(fonts/Montserrat-Bold.ttf);
+    src: url(../fonts/Montserrat-Bold.ttf);
     font-weight: 700;
 }
 
@@ -106,7 +106,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     height: 52px;
     border-bottom: 2px solid black;
 }
@@ -299,9 +299,9 @@ textarea {
 }
 
 button[type="submit"] {
-    color: white;
+    color: black;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 4px;
     width: 100%;
     padding: 8px 16px;
